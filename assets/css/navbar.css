@@ -1,7 +1,6 @@
 .nav_right{
     width: 25%;
     background-color: #1848A0;
-    height: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +14,9 @@
     display: flex;
     height: 100%;
 }
-
+.nav_top{
+    background: #E1E1E1;
+}
 .nav_left i{
     color: #f92222;
     margin-right: .5rem;
