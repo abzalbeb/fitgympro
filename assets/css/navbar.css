@@ -67,6 +67,11 @@
     color: white;
     list-style: none;
     font-size: 17px;
+    transition: .6s;
+}
+
+.links_cards li:hover{
+    color: #fa2323;
 }
 
 .nav_bottom button{
@@ -75,12 +80,14 @@
     border: none;
     color: white;
     font-size: 1rem;
+    transition: .6s;
 }
 
 .nav_bottom button:hover{
     color: #000;
     background-color: #fc7442;
     border-color: #fb6b37;
+    cursor: pointer;
 }
 
 .media_navbar .bx-menu{
