@@ -1,0 +1,175 @@
+.nav_right{
+    width: 25%;
+    background-color: #1848A0;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_right img{
+    width: 120px;
+}
+
+.navbar{
+    display: flex;
+    height: 100%;
+}
+
+.nav_left i{
+    color: #f92222;
+    margin-right: .5rem;
+    font-size: 1.2rem;
+}
+
+.for_calls{
+    display: flex;
+    padding: .5rem 3rem;
+    align-items: center;
+}
+
+.call_left{
+    display: flex;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+
+.call_righ{
+    display: flex;
+    align-items: center;
+}
+
+.for_calls h4{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav_bottom{
+    width: 100%;
+    background-color: #1848A0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 3rem;
+    justify-content: space-between;
+}
+
+.nav_left{
+    width: 75%;
+}
+
+.links_cards ul{
+    display: flex;
+}
+
+.links_cards li{
+    margin-right: 30px;
+    color: white;
+    list-style: none;
+    font-size: 17px;
+}
+
+.nav_bottom button{
+    background-color: #f92222;
+    padding: 1rem 3rem;
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.nav_bottom button:hover{
+    color: #000;
+    background-color: #fc7442;
+    border-color: #fb6b37;
+}
+
+.media_navbar .bx-menu{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.media_navbar{
+    display: none;
+}
+
+.click_nav{
+    display: none;
+}
+
+.title_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.title_div h1{
+    color: white;
+    font-size: calc(1.375rem + 1.5vw);
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 991px){
+    .navbar{
+        display: none;
+    }
+
+    .click_nav{
+        display: block;
+    }
+
+    .media_navbar{
+        display: flex;
+    }
+
+    .media_navbar{
+        width: 100%;
+        height: 82px;
+        background-color: #1848A0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        padding-bottom: 0;
+    }
+
+    .media_navbar img{
+        width: 90px;
+    }
+
+    .click_nav{
+        width: 100%;
+        background-color: #1848A0;
+        min-height: 0px;
+        transition: 1s;
+        padding: 0 1rem;
+        height: 0;
+        overflow: hidden;
+        color: white;
+    }
+
+    .click_nav_1{
+        min-height: 240px;
+    }
+
+    .click_nav li{
+        padding: 10px 0;
+        list-style: none;
+        transition: .6s;
+        color: white;
+    }
+
+    .click_nav li:hover{
+        color: #fa2323;
+        cursor: pointer;
+    }
+}
