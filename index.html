@@ -41,9 +41,67 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Lato&family=Marcellus&family=Montserrat:ital,wght@1,700&family=Poppins:wght@800&family=Raleway:wght@500;700;900&family=Source+Code+Pro:wght@200;400&family=Titillium+Web:wght@300;400&family=Varela+Round&display=swap" rel="stylesheet">
 
         
-    <title>Document</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <title>FitGym.pro</title>
 </head>
 <body>
     
+    <div class="container-main">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide image1">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px; " >
+                        <h5 class="text-white text-uppercase sizeSoz1">Best Gym Center</h5>
+                        <h1 class="display-2 text-white text-uppercase mb-md-4 sizeSoz">Build Your Body Strong With
+                            </h1>
+                        <a href="/#plans" class="btn btn-primary py-md-3 px-md-5 me-3">Join Us</a>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide image2">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px; " >
+                        <h5 class="text-white text-uppercase sizeSoz1">Best Gym Center</h5>
+                        <h1 class="display-2 text-white text-uppercase mb-md-4 sizeSoz">Grow Your Strength With Our 24/7 Videos
+                            </h1>
+                        <a href="/#plans" class="btn btn-primary py-md-3 px-md-5 me-3">Join Us</a>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+    </div>
+    <div class="container-fluid">
+        <p>salom</p>
+    </div>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const swiper = new Swiper('.mySwiper', {
+    loop: true, // Loop mode
+    autoplay: {
+      delay: 5000, // 1 second
+      disableOnInteraction: false, // Continue autoplay after user interaction
+    },
+    speed: 800, // Slayd o‘tish tezligi (millisekundlarda)
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+});
+
+  </script>
 </body>
 </html>
