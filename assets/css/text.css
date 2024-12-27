@@ -1,0 +1,67 @@
+/* text page css start */
+.container-text-info-main{
+    padding: 1rem !important;
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+    margin: auto;
+  }
+  @media (min-width: 1400px) {
+    .container-text-info-main{
+      max-width: 1320px;
+      padding: 3rem !important;
+    }
+  }
+  .termsConditions h3 {
+    text-align: center;
+  }
+  h3, h4, .font-weight-semi-bold {
+    font-weight: 600 !important;
+  }
+  @media (min-width: 1200px) {
+    h3, .h3 {
+      font-size: 1.75rem;
+    }
+  }
+  .p-5 {
+    padding: 3rem !important;
+  }
+  .w-100 {
+    width: 100% !important;
+  }
+  .shadow {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+  }
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,0.125);
+    border-radius: .25rem;
+  }
+  .termsConditions .title {
+    font-weight: bold !important;
+    font-size: 17px !important;
+    text-align: center !important;
+  }
+  .termsConditions p{
+    font-family: 'Rubik',sans-serif !important;
+    text-align: justify !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    line-height: 1.5;
+    color: #686A6F;
+  }
+  .height{
+    height: 20px;
+  }
+  .termsConditions ol, p {
+    text-align: justify !important;
+  }
+  .hr{
+    
+  }
+  /* text page css end */
