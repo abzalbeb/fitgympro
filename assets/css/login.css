@@ -49,7 +49,17 @@ a{
     width: 100%;
     margin: auto;
 }
+.phone-container{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.phone-container input{
+    width: 100% !important;
+}
 
+  .iti--allow-dropdown{
+    width: 100%;
+  }
 .email_card input{
     margin-bottom: 1rem;
     width: 100%;
@@ -125,3 +135,57 @@ a{
     margin-top: 1rem;
     font-family: "Roboto", serif;
 }
+.card22{
+    max-width: 800px !important;
+    width: 100%;
+    margin: auto;
+}
+
+    .custom-select {
+      position: relative;
+      width: 100%;
+      font-family: "Roboto", serif !important;
+    }
+    .selected {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: #f9f9f9;
+      cursor: pointer;
+      font-family: "Roboto", serif !important;
+      color: #686A6F;
+    }
+    .options {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-height: 150px;
+      overflow-y: auto;
+      display: none;
+      z-index: 1000;
+      font-family: "Roboto", serif !important;
+    }
+    .options div {
+      padding: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .options div:hover {
+      background: #f1f1f1;
+    }
+    .options div.active {
+      background: #ddd;
+    }
+    .blockaa{
+        width: 66.66667%;
+        margin: auto !important;
+        text-align: center !important;
+    }
+    .hhf{
+        width: 10px;
+    }
