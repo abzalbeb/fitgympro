@@ -10,6 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/navbar.css" />
     <link rel="stylesheet" href="./assets/css/login.css" />
     <link
@@ -21,9 +24,10 @@
     <div class="main_navbar">
       <div class="navbar">
         <div class="nav_right">
-          <a href="./index.html"><img
-            src="https://fitgym.pro/storage/b02ff931-3081-4afd-81bc-1272a5ac17e3/logo.png?v=68bbf1c50c9a419bf6d8ebbb1e2a3aac8fe7ef44"
-            alt=""
+          <a href="./index.html"
+            ><img
+              src="https://fitgym.pro/storage/b02ff931-3081-4afd-81bc-1272a5ac17e3/logo.png?v=68bbf1c50c9a419bf6d8ebbb1e2a3aac8fe7ef44"
+              alt=""
           /></a>
         </div>
         <div class="nav_left">
@@ -54,9 +58,10 @@
         </div>
       </div>
       <div class="media_navbar">
-        <a href="./index.html"><img
-          src="https://fitgym.pro/storage/b02ff931-3081-4afd-81bc-1272a5ac17e3/logo.png?v=68bbf1c50c9a419bf6d8ebbb1e2a3aac8fe7ef44"
-          alt=""
+        <a href="./index.html"
+          ><img
+            src="https://fitgym.pro/storage/b02ff931-3081-4afd-81bc-1272a5ac17e3/logo.png?v=68bbf1c50c9a419bf6d8ebbb1e2a3aac8fe7ef44"
+            alt=""
         /></a>
         <i onclick="click_nav()" class="bx bx-menu"></i>
       </div>
@@ -71,12 +76,51 @@
       </div>
     </div>
 
-    <section class="section_title" style=" background: linear-gradient(rgba(34, 36, 41, .8), rgba(34, 36, 41, .8)), url(https://fitgym.pro/storage/65f8fdf7-508d-48a1-80d6-e5eca5520d7f/carousel-1.jpg?v=9ead77e79fc39160d4662c41c52223887c3d1360)top center no-repeat;    background-size: cover; height: 21rem; ">
-        <div class="title_div">
-            <h1 data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s;">LOGIN </h1>
-        </div>
+    <section
+      class="section_title"
+      style="
+        background: linear-gradient(
+            rgba(34, 36, 41, 0.8),
+            rgba(34, 36, 41, 0.8)
+          ),
+          url(https://fitgym.pro/storage/65f8fdf7-508d-48a1-80d6-e5eca5520d7f/carousel-1.jpg?v=9ead77e79fc39160d4662c41c52223887c3d1360)
+            top center no-repeat;
+        background-size: cover;
+        height: 21rem;
+      "
+    >
+      <div class="title_div">
+        <h1
+          data-wow-delay="0.5s"
+          style="visibility: visible; animation-delay: 0.5s"
+        >
+          LOGIN
+        </h1>
+      </div>
     </section>
 
+    <div class="email_main">
+      <h4>Fill your email and password</h4>
+      <h1>Login now</h1>
+      <div class="email_card">
+        <input type="text" placeholder="E-main">
+        <input type="text" placeholder="Password">
+        <div class="for_check">
+          <input type="checkbox">
+          <h3>Remember me</h3>
+        </div>
+        <button>Continue</button>
+        <h5>Forgot password?</h5>
+        <div class="for_line"></div>
+        <h2>Don't have an account?<a class="for_joins" href="#">Join Today!</a> </h2>
+      </div>
+    </div>
+
+    <div class="cards_main">
+      <div class="for_card"></div>
+      <div class="for_card"></div>
+      <div class="for_card"></div>
+    </div>
     <script src="./assets/js/navbar.js"></script>
   </body>
 </html>
