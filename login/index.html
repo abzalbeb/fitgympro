@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="../assets/css/navbar.css" />
     <link rel="stylesheet" href="../assets/css/login.css" />
     <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -47,7 +48,7 @@
                 <a href="../#plans"><li>SIGN UP</li></a>
                 <a href="#"><li>LOGIN</li></a>
                 <a href="../contact/"><li>CONTACT US</li></a>
-                <a href="#"><li>CANCELLATION</li></a>
+                <a href="#" onclick="openModal()"><li>CANCELLATION</li></a>
               </ul>
             </div>
             <a href="../register/"><button>JOIN US</button></a>
@@ -68,7 +69,7 @@
           <a href="../#plans"><li>SIGN UP</li></a>
           <a href="#"><li>LOGIN</li></a>
           <a href="../contact/"><li>CONTACT US</li></a>
-          <a href="#"><li>CANCELLATION</li></a>
+          <a href="#" onclick="openModal()"><li>CANCELLATION</li></a>
         </ul>
       </div>
     </div>
@@ -221,6 +222,32 @@
   </div>
 
   
+  <div class="modal-container" style="display: none;">
+  </div>
+  <div class="container-form" style="display: none;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-main" id="cancelModalLabel">Cancellation Request</h5>
+        <button type="button" style="padding: 5px;cursor: pointer;" class="close" onclick="closeModal()" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><i style="font-size: 15px;" class='bx bx-x'></i></span>
+      </button>
+      </div>
+      <div class="modal-body">
+        <form class="cancel-form"><input type="hidden" name="_token" value="" autocomplete="off">
+        
+        <div class="text-main mb-3" style="line-height: 22px;font-family: 'Rubik',sans-serif;color: #686A6F;">In order to cancel your membership, please fill in the email linked to your account.</div>
+        <input class="form-control mb-3" placeholder="E-mail" type="email" id="unsubscribe_email" name="unsubscribe_email" value="">
+        
+                        
+                        <button type="submit" class="btn w-100 btn-primary">
+            Send
+        </button>
+        </form>
+    </div>
+    </div>
+  </div>
+
+  <script src="../assets/js/main.js"></script>
 <script>
   window.__lc = window.__lc || {};
   window.__lc.license = 18961407;
