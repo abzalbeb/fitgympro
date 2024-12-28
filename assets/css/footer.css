@@ -41,7 +41,7 @@
 
 .footer_main{
     padding: 0 3rem;
-    background-color: #1848A0;
+    background-color: #343A40;
     display: flex;
 }
 
@@ -83,7 +83,7 @@
 }
 
 .footer_news button{
-    background-color: #1848A0;
+    background-color: #343A40;
     color: white;
     padding: 1rem 3rem;
     border: none;

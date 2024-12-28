@@ -1,6 +1,6 @@
 .nav_right{
     width: 25%;
-    background-color: #1848A0;
+    background-color: #343A40;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +47,7 @@
 
 .nav_bottom{
     width: 100%;
-    background-color: #1848A0;
+    background-color: #343A40;
     height: 100px;
     display: flex;
     align-items: center;
