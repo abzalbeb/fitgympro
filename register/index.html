@@ -20,15 +20,58 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/footer.css" />
     <link rel="stylesheet" href="../assets/css/style.css">
       <link rel="stylesheet" href="https://unpkg.com/intl-tel-input@17.0.19/build/css/intlTelInput.min.css">
-
+      <style>
+        .custom-select {
+        position: relative;
+        width: 100%;
+        font-family: 'Rubik', sans-serif !important;
+      }
+      .selected {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background: #f9f9f9;
+        cursor: pointer;
+        font-family: 'Rubik', sans-serif !important;
+        color: #686A6F;
+      }
+      .options {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-height: 150px;
+        overflow-y: auto;
+        display: none;
+        z-index: 1000;
+        font-family: 'Rubik', sans-serif !important;
+      }
+      .options div {
+        padding: 10px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      .options div:hover {
+        background: #f1f1f1;
+      }
+      .options div.active {
+        background: #ddd;
+      }
+  </style>
   </head>
   <body>
     <div class="main_navbar">
       <div class="navbar">
         <div class="nav_right">
-          <a href="./index.html"
+          <a href="../"
             ><img
               src="https://fitgym.pro/storage/b02ff931-3081-4afd-81bc-1272a5ac17e3/logo.png?v=68bbf1c50c9a419bf6d8ebbb1e2a3aac8fe7ef44"
               alt=""
@@ -50,27 +93,19 @@
           <div class="nav_bottom">
             <div class="links_cards">
               <ul>
-
                 <a href="../"><li>HOME</li></a>
                 <a href="../#plans"><li>SIGN UP</li></a>
                 <a href="../login/"><li>LOGIN</li></a>
                 <a href="../contact/"><li>CONTACT US</li></a>
                 <a href="#" onclick="openModal()"><li>CANCELLATION</li></a>
-
-                <a href="#"><li>HOME</li></a>
-                <a href="#"><li>SIGN UP</li></a>
-                <a href="#"><li>LOGIN</li></a>
-                <a href="#"><li>CONTACT US</li></a>
-                <a href="#"><li>CANCELLATION</li></a>
-
               </ul>
             </div>
-            <a href="#"><button>JOIN US</button></a>
+            <a href="../register/"><button>JOIN US</button></a>
           </div>
         </div>
       </div>
       <div class="media_navbar">
-        <a href="./index.html"
+        <a href="../"
           ><img
             src="https://fitgym.pro/storage/b02ff931-3081-4afd-81bc-1272a5ac17e3/logo.png?v=68bbf1c50c9a419bf6d8ebbb1e2a3aac8fe7ef44"
             alt=""
@@ -79,19 +114,11 @@
       </div>
       <div class="click_nav">
         <ul>
-
           <a href="../"><li>HOME</li></a>
           <a href="../#plans"><li>SIGN UP</li></a>
           <a href="../login/"><li>LOGIN</li></a>
           <a href="../contact/"><li>CONTACT US</li></a>
           <a href="#" onclick="openModal()"><li>CANCELLATION</li></a>
-
-          <a href="#"><li>HOME</li></a>
-          <a href="#"><li>SIGN UP</li></a>
-          <a href="#"><li>LOGIN</li></a>
-          <a href="#"><li>CONTACT US</li></a>
-          <a href="#"><li>CANCELLATION</li></a>
-
         </ul>
       </div>
     </div>
@@ -103,7 +130,7 @@
             rgba(34, 36, 41, 0.8),
             rgba(34, 36, 41, 0.8)
           ),
-          url(https://fitgym.pro/storage/65f8fdf7-508d-48a1-80d6-e5eca5520d7f/carousel-1.jpg?v=9ead77e79fc39160d4662c41c52223887c3d1360)
+          url(../assets/image/carousel-1.jpg)
             top center no-repeat;
         background-size: cover;
         height: 21rem;
@@ -296,7 +323,77 @@
       </div>
       </div>
     </div>
-    
+    <footer>
+      <div class="footer_main">
+      <div class="footer_cards">
+        <a href="../"><div class="footer_card cards_1">
+          <img src="../assets/image/logo.png" alt="">
+        </div>
+      </a>
+        <div class="footer_card cards_2">
+          <h4>Get In Touch</h4>
+          <div class="df_footer">
+            <i class='bx bxs-map' ></i>
+            <p>18 Parkekklisia, Markou Drakou, Limassol. Cyprus,4520 </p>
+          </div>
+          <div class="df_footer">
+            <i class="bx bxs-envelope"></i>
+            <p>support@fitgym.pro </p>
+          </div>
+          <div class="df_footer">
+            <i class="bx bxs-phone"></i>
+            <p>
+
+              (+357) 22057957
+               </p>
+          </div>
+        </div>
+        <div class="footer_card cards_3">
+          <h4>Quick Links</h4>
+          <a href="../contact/"><div class="df_footer">
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            <p>Contact Us </p>
+          </div>
+        </a>
+          <a href="../terms-and-conditions/"><div class="df_footer">
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            <p>Terms & Conditions </p>
+          </div>
+        </a>
+          <a href="../cookies-policy/"><div class="df_footer">
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            <p>Cookies policy </p>
+          </div>
+        </a>
+          <a href="../privacy-policy/"><div class="df_footer">
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            <p>Privacy Policy </p>
+          </div>
+        </a>
+          <a href="../frequently-asked-questions/"><div class="df_footer">
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            <p>Refund Policy </p>
+          </div>
+        </a>
+          <a href="../frequently-asked-questions/"><div class="df_footer">
+            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            <p>Report abuse </p>
+          </div>
+        </a>
+        </div>
+      </div>
+      <div class="footer_news">
+        <h4>Newsletter</h4>
+        <h6>Subscribe Our Newsletter</h6>
+        <a href="../#plans"><button>JOIN US</button></a>
+      </div>
+    </div>
+    <div class="all_right" style="display: flex;justify-content: center;">
+      <p>
+        © <a href="../">Advarto Trading Limited</a>. All Rights Reserved.
+    </p>
+    </div>
+    </footer>
     <script src="../assets/js/main.js"></script>
 
     <script>

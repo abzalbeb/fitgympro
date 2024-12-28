@@ -10,62 +10,65 @@
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/login.css">
     <link rel="stylesheet" href="../assets/css/navbar.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+
 </head>
 <body>
-    <div class="main_navbar">
-        <div class="navbar">
-          <div class="nav_right">
-            <a href="../index.html"
-              ><img
-                src="https://fitgym.pro/storage/b02ff931-3081-4afd-81bc-1272a5ac17e3/logo.png?v=68bbf1c50c9a419bf6d8ebbb1e2a3aac8fe7ef44"
-                alt=""
-            /></a>
-          </div>
-          <div class="nav_left">
-            <div class="nav_top">
-              <div class="for_calls">
-                <div class="call_left">
-                  <i class="bx bxs-envelope"></i>
-                  <h4>support@fitgym.pro</h4>
-                </div>
-                <div class="call_righ">
-                  <i class="bx bxs-phone"></i>
-                  <h4>(+357) 22057957</h4>
-                </div>
-              </div>
+  <div class="main_navbar">
+    <div class="navbar">
+      <div class="nav_right">
+        <a href="../"
+          ><img
+            src="https://fitgym.pro/storage/b02ff931-3081-4afd-81bc-1272a5ac17e3/logo.png?v=68bbf1c50c9a419bf6d8ebbb1e2a3aac8fe7ef44"
+            alt=""
+        /></a>
+      </div>
+      <div class="nav_left">
+        <div class="nav_top">
+          <div class="for_calls">
+            <div class="call_left">
+              <i class="bx bxs-envelope"></i>
+              <h4>support@fitgym.pro</h4>
             </div>
-            <div class="nav_bottom">
-              <div class="links_cards">
-                <ul>
-                  <a href="../"><li>HOME</li></a>
-                  <a href="../#plans"><li>SIGN UP</li></a>
-                  <a href="../login/"><li>LOGIN</li></a>
-                  <a href="../contact"><li>CONTACT US</li></a>
-                  <a href="#"><li>CANCELLATION</li></a>
-                </ul>
-              </div>
-              <a href="#"><button>JOIN US</button></a>
+            <div class="call_righ">
+              <i class="bx bxs-phone"></i>
+              <h4>(+357) 22057957</h4>
             </div>
           </div>
         </div>
-        <div class="media_navbar">
-          <a href="./index.html"
-            ><img
-              src="https://fitgym.pro/storage/b02ff931-3081-4afd-81bc-1272a5ac17e3/logo.png?v=68bbf1c50c9a419bf6d8ebbb1e2a3aac8fe7ef44"
-              alt=""
-          /></a>
-          <i onclick="click_nav()" class="bx bx-menu"></i>
-        </div>
-        <div class="click_nav">
-          <ul>
-            <a href="#"><li>HOME</li></a>
-            <a href="#"><li>SIGN UP</li></a>
-            <a href="#"><li>LOGIN</li></a>
-            <a href="#"><li>CONTACT US</li></a>
-            <a href="#"><li>CANCELLATION</li></a>
-          </ul>
+        <div class="nav_bottom">
+          <div class="links_cards">
+            <ul>
+              <a href="../"><li>HOME</li></a>
+              <a href="../#plans"><li>SIGN UP</li></a>
+              <a href="../login/"><li>LOGIN</li></a>
+              <a href="../contact/"><li>CONTACT US</li></a>
+              <a href="#" onclick="openModal()"><li>CANCELLATION</li></a>
+            </ul>
+          </div>
+          <a href="../register/"><button>JOIN US</button></a>
         </div>
       </div>
+    </div>
+    <div class="media_navbar">
+      <a href="../"
+        ><img
+          src="https://fitgym.pro/storage/b02ff931-3081-4afd-81bc-1272a5ac17e3/logo.png?v=68bbf1c50c9a419bf6d8ebbb1e2a3aac8fe7ef44"
+          alt=""
+      /></a>
+      <i onclick="click_nav()" class="bx bx-menu"></i>
+    </div>
+    <div class="click_nav">
+      <ul>
+        <a href="../"><li>HOME</li></a>
+        <a href="../#plans"><li>SIGN UP</li></a>
+        <a href="../login/"><li>LOGIN</li></a>
+        <a href="../contact/"><li>CONTACT US</li></a>
+        <a href="#" onclick="openModal()"><li>CANCELLATION</li></a>
+      </ul>
+    </div>
+  </div>
 
 
       <section
@@ -75,7 +78,7 @@
             rgba(34, 36, 41, 0.8),
             rgba(34, 36, 41, 0.8)
           ),
-          url(https://fitgym.pro/storage/65f8fdf7-508d-48a1-80d6-e5eca5520d7f/carousel-1.jpg?v=9ead77e79fc39160d4662c41c52223887c3d1360)
+          url(../assets/image/carousel-1.jpg)
             top center no-repeat;
         background-size: cover;
         height: 21rem;
@@ -125,13 +128,47 @@
         </div>
       </div>
 
+      <div id="cookie-bar" class="w-100 mx-0 small row align-items-center anim-appear">
+        <div class="col text-center text-md-left">
+            We use cookies to improve our user experience. We will assume you're ok with this, but you can opt out or find out more about our policy <a href="./cookies-policy/"><u>here</u></a>.
+        </div>
+        <div class="col-12 col-md-auto text-center text-md-right pl-md-3 pt-3 py-md-0">
+            <button class="btn-main-dark btn-mini" id="accept-cookies" onclick="document.cookie = 'cookiesAccepted=true';document.getElementById('cookie-bar').style.display = 'none';document.body.classList.add('accept');">Accept cookies</button>
+        </div>
+    </div>
+  
 
+
+    <div class="modal-container" style="display: none;">
+    </div>
+    <div class="container-form" style="display: none;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-main" id="cancelModalLabel">Cancellation Request</h5>
+          <button type="button" style="padding: 5px;cursor: pointer;" class="close" onclick="closeModal()" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i style="font-size: 15px;" class='bx bx-x'></i></span>
+        </button>
+        </div>
+        <div class="modal-body">
+          <form class="cancel-form"><input type="hidden" name="_token" value="" autocomplete="off">
+          
+          <div class="text-main mb-3" style="line-height: 22px;font-family: 'Rubik',sans-serif;color: #686A6F;">In order to cancel your membership, please fill in the email linked to your account.</div>
+          <input class="form-control mb-3" placeholder="E-mail" type="email" id="unsubscribe_email" name="unsubscribe_email" value="">
+          
+                          
+                          <button type="submit" class="btn w-100 btn-primary">
+              Send
+          </button>
+          </form>
+      </div>
+      </div>
+    </div>
 
       <footer>
         <div class="footer_main">
         <div class="footer_cards">
-          <a href="../index.html"><div class="footer_card cards_1">
-            <img src="https://fitgym.pro/storage/b02ff931-3081-4afd-81bc-1272a5ac17e3/logo.png?v=68bbf1c50c9a419bf6d8ebbb1e2a3aac8fe7ef44" alt="">
+          <a href="../"><div class="footer_card cards_1">
+            <img src="../assets/image/logo.png" alt="">
           </div>
         </a>
           <div class="footer_card cards_2">
@@ -154,32 +191,32 @@
           </div>
           <div class="footer_card cards_3">
             <h4>Quick Links</h4>
-            <a href="#"><div class="df_footer">
+            <a href="../contact/"><div class="df_footer">
               <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
               <p>Contact Us </p>
             </div>
           </a>
-            <a href="#"><div class="df_footer">
+            <a href="../terms-and-conditions/"><div class="df_footer">
               <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
               <p>Terms & Conditions </p>
             </div>
           </a>
-            <a href="#"><div class="df_footer">
+            <a href="../cookies-policy/"><div class="df_footer">
               <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
               <p>Cookies policy </p>
             </div>
           </a>
-            <a href="#"><div class="df_footer">
+            <a href="../privacy-policy/"><div class="df_footer">
               <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
               <p>Privacy Policy </p>
             </div>
           </a>
-            <a href="#"><div class="df_footer">
+            <a href="../frequently-asked-questions/"><div class="df_footer">
               <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
               <p>Refund Policy </p>
             </div>
           </a>
-            <a href="#"><div class="df_footer">
+            <a href="../frequently-asked-questions/"><div class="df_footer">
               <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
               <p>Report abuse </p>
             </div>
@@ -189,14 +226,16 @@
         <div class="footer_news">
           <h4>Newsletter</h4>
           <h6>Subscribe Our Newsletter</h6>
-          <a href="#"><button>JOIN US</button></a>
+          <a href="../#plans"><button>JOIN US</button></a>
         </div>
       </div>
-      <div class="all_right">
+      <div class="all_right" style="display: flex;justify-content: center;">
         <p>
-          © <a href="#">Advarto Trading Limited</a>. All Rights Reserved.
+          © <a href="../">Advarto Trading Limited</a>. All Rights Reserved.
       </p>
       </div>
       </footer>
+    <script src="../assets/js/main.js"></script>
+
 </body>
 </html>
