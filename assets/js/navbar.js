@@ -13,5 +13,5 @@ function closeModal(){
     document.querySelector('.container-form').style=`display:none`
 }
 document.querySelector('#accept-cookies').addEventListener('click', function () {
-    document.querySelector('#cookie-bar').style = 'position: relative; !important';
+    document.querySelector('#cookie-bar').style = 'display:none !important;';
   });
