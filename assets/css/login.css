@@ -52,7 +52,17 @@ a{
     margin: auto;
     margin-top: 20px !important;
 }
+.phone-container{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.phone-container input{
+    width: 100% !important;
+}
 
+  .iti--allow-dropdown{
+    width: 100%;
+  }
 .email_card input{
     margin-bottom: 1rem;
     width: 100%;
