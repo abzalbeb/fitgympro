@@ -185,6 +185,75 @@ a{
     font-family: "Roboto", serif;
 }
 
+.send_email{
+    padding: 3rem 1rem;
+    background-color: #1848A0;
+}
+
+.for_inputs_email{
+    width: 100%;
+    max-width: 740px;
+    margin: auto;
+}
+
+.for_inputs_email input{
+    font-family: "Roboto", serif;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #686A6F;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+}
+
+.for_inputs_email textarea{
+    font-family: "Roboto", serif;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #686A6F;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+}
+
+.for_inputs_email button:hover{
+    color: #000;
+    background-color: #fc7442;
+    border-color: #fb6b37;
+}
+
+.for_inputs_email button{
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: #f92222;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    border: none;
+    transition: .7s;
+}
+
 
 
 
@@ -196,5 +265,9 @@ a{
     .for_card{
         width: 100%;
         margin: 0;
+    }
+    
+    .cards_main{
+        display: block !important;
     }
 }
