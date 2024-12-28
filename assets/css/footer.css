@@ -91,9 +91,6 @@
     transition: .7s;
 }
 
-.footer_news button:hover{
-    color: black;
-}
 
 
 .cards_1{
@@ -123,7 +120,7 @@
 }
 
 .all_right{
-    background-color: #093075;
+    background-color: #333;
     padding: 1.5rem 3rem;
 }
 
