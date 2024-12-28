@@ -143,7 +143,7 @@ a{
     padding: 3rem 1rem;
     background-color: #F4F5F8;
     border-radius: .25rem;
-    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
     width: 33.333%;
     margin: 0 1.5rem;
 }
@@ -185,6 +185,134 @@ a{
     font-family: "Roboto", serif;
 }
 
+.send_email{
+    padding: 3rem 1rem;
+    background-color: #1848A0;
+}
+
+.for_inputs_email{
+    width: 100%;
+    max-width: 740px;
+    margin: auto;
+}
+
+.for_inputs_email input{
+    font-family: "Roboto", serif;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #686A6F;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+}
+
+.for_inputs_email textarea{
+    font-family: "Roboto", serif;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #686A6F;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+}
+
+.for_inputs_email button:hover{
+    color: #000;
+    background-color: #fc7442;
+    border-color: #fb6b37;
+}
+
+.for_inputs_email button{
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: #f92222;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    border: none;
+    transition: .7s;
+}
+
+.for_register_cards{
+    max-width: 960px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+    padding: 3rem 1rem;
+    margin-top: 3rem;
+}
+
+.for_register_card h2{
+    padding-bottom: 3rem;
+    font-weight: 700;
+    font-size: calc(1.325rem + .9vw);
+}
+
+.for_register_card h4{
+    text-transform: uppercase !important;
+    font-weight: 600;
+    font-size: calc(1.275rem + .3vw);
+}
+
+.for_register_card p{
+    padding: 1rem 0;
+    font-size: 1rem;
+    color: #686A6F;
+    font-family: "Roboto", serif;
+}
+
+.register_card_1{
+    width: 41%;
+}
+
+.register_card_2{
+    width: 50%;
+    margin-bottom: 3rem;
+    background: #FFFFFF;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    padding: 30px;
+    margin-left: 2rem;
+}
+
+.for_reg_inp input{
+    display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #686A6F;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  outline: none;
+  height: 52px;
+  border-radius: 0.25rem;
+  margin-bottom: 15px;
+  transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+}
 
 
 
@@ -196,5 +324,21 @@ a{
     .for_card{
         width: 100%;
         margin: 0;
+    }
+    
+    .cards_main{
+        display: block !important;
+    }
+}
+
+@media(max-width: 767px){
+    .for_register_cards{
+        display: block;
+        padding: 2rem;
+    }
+
+    .for_register_card {
+        width: 100%;
+        margin-left: 0;
     }
 }
